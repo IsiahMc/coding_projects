@@ -1,0 +1,71 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background-color: #222222;
+}
+.wrapper .main-txt{
+    display: flex;
+    font-weight: 500;
+    font-style: bold;
+    font-size: 30px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+.wrapper .search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.wrapper .s-box{
+    width: 500px;
+    height: 2em;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2px;
+}
+.wrapper .s-box form input{
+    padding-left: 8px;
+}
+
+.wrapper .search-bar form button{
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    border: none;
+    position: absolute;
+    padding: 4px;
+    margin-left: 7px;
+    cursor: pointer;
+    background-color: white;
+    
+}
+.wrapper .search-bar button:hover{
+    background-color: rgb(78, 119, 255);
+    transition: 0.3s ease;
+}
+.wrapper .error{
+    color: red;
+    margin-top: 10px;
+    display: none;
+}
+.wrapper .error.active{
+    display: block;
+}
+.wrapper .search-bar form input.active{
+    border-color: rgb(78, 119, 255);
+}

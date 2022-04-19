@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone</title>
+    <script src="https://kit.fontawesome.com/ebaf4dae07.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--hero section-->
+    <section class="hero">
+    <div class="hero">
+    <nav id="site-nav" class="nav-bar">
+        <div class="nav-container">
+            <div class="nav-logo"></div>
+            <div id="headerNavbar" class="header-navbar">
+                <h1 class="logo"> DRN</h1>
+                <ul class="nav-items">
+                    <li><a href="#">Camera drones</a></li>
+                    <li><a href="#">Special</a> </li>
+                    <li><a href="#">Handheld</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+                <ul class="nav-items-right">
+                    <button type="button">Store</button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="scroll reveal">
+    <div class="main-text">
+        <h1>ZYLON 470</h1>
+        <h3>A NEW FLAGSHIP FOR DIGITAL ARCHITECTURE</h3>
+        <a href="#" class="main-btn">Learn More</a>
+    </div>
+</div>
+</div>  
+</section>
+<section class="second-hero">
+   
+    <div class="second-hero"> 
+        <div class="scroll reveal">
+    <div class="second-txt">
+        <h3> New Product</h3>
+        <h1>MAVRIK <span class="sec">330E</span></h1>
+        <h2>More Than Enough</h2>
+        <div class="second-btns">
+            <a href="#" class="second-btn">Learn More</a>
+            <div class="divider"></div>
+            <a href="#" class="second-btn2">Buy Now</a>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+<section class="products">
+    <div class="container">
+        <div class="box">
+            <div class="product-txt">
+            <h4>Product Info</h4>
+                <h1>Cameras</h1>
+                <h3>See Product overview and reviews here</h3>
+                <a href="#" class="prod-btn1">Learn More</a>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="product-txt">
+                <h4>Compact Series</h4>
+                    <h1>GTX 5</h1>
+                    <h3>New meaning to versatile</h3>
+                    <a href="#" class="prod-btn1">Learn More</a>
+                </div>
+        </div>
+        <div class="box2">
+            <div class="product-txt">
+                <h4>Aerial photography done right</h4>
+                    <h1>STX ROUGUE</h1>
+                    <h3>Redifine Everything</h3>
+                    <a href="#" class="prod-btn1">Learn More</a>
+                </div>
+        </div>
+        <div class="box4">
+            <div class="product-txt">
+                <h4>Master the skies</h4>
+                    <h1>MAVRIK PRO</h1>
+                    <h3>Better than ever</h3>
+                    <a href="#" class="prod-btn1">Learn More</a>
+                </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="left-area">
+        <h2>contact</h2>
+        <ul class=list>
+            <li>148 sherbourne Road</li>
+            <li>Greensboro North Carolina</li>
+            <li>USA</li>
+        </ul>
+    </div>
+        <ul class="right-area">
+            <li class="link-area">
+                <h2>useful link</h2>
+                <ul class="list h-list">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Fly Safe</h2>
+                <ul class="list">
+                    <li><a href="#">Fly Safe</a></li>
+                    <li><a href="#">Flying Tips</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Product Catergories</h2>
+                <ul class="list">
+                    <li><a href="#">Consumer</a></li>
+                    <li><a href="#">Professional</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                    <li><a href="#">Components</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Subscribe</h2>
+                <form action="" class="form-search">
+                    <div class="search-box">
+                        <input type="text" name="" id="">
+                        <button class="sub" type="submit">Send</button>
+                    </div>
+                </form>
+
+                <div class="socials">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </li>
+        </ul>
+        <div class="footer-bottom">
+            <img src="" alt="">
+            <p>All rights reserved by &copy;created 2021</p>
+        </div>
+</footer>
+    <!--scroll rveal effect-->    
+    <script type="text/javascript">
+        window.addEventListener('load',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+            for(var i=0; i < reveals.length; i++){
+
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+                
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+                }else{
+                    reveals[i].classLiist.remove('active');
+                }
+            }
+        }
+
+    </script>
+
+</body>
+</html>
